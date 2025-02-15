@@ -1,0 +1,888 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Open Sans';
+}
+
+.Navbar {
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  color: #2e3133;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavPagesMove,
+.NavIcons {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.WebLogo {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.SearchInput {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: 2px solid #e0e0e0;
+  outline: none;
+}
+
+.NavIcons span {
+  position: relative;
+}
+
+.SearchIcon {
+  position: absolute;
+  font-size: 20px;
+  right: 15%;
+  top: 30%;
+}
+
+.UpdatesPromo {
+  width: 90%;
+  margin: 1% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.UpdatePromoLiveBox {
+  width: 28%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+
+  .UpdatePromoLinks {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 10px 0px;
+
+      h4 {
+        color: #000;
+        padding: 0px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        word-spacing: 30px;
+    }
+  }
+}
+
+.yellowBanner,
+.BlueImages {
+  width: 100%;
+  height: 200px;
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw3d439957/images/2024/Home/071024/A_SPOT_BG_DT-min.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.AeroBtsDeals {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 0px;
+  h4 {
+      color: #000;
+      padding: 0px 20px;
+      font-size: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      word-spacing: 30px;
+  }
+}
+
+.productsContentMain{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+.productsContent{
+padding: 10px;
+margin: 20px;
+position: relative;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+border-radius: 20px;
+padding: 10px;
+h5{
+  font-weight: 700;
+}
+}
+.productsImage{
+border-radius: 20px;
+transition: all 0.6s;
+position:relative;
+}
+.productsImage:hover{
+transform: scale(0.9);
+}
+.WishListCartMainDiv{
+width: 90%;
+margin: auto;
+border-radius: 10px;
+display: none;
+background: rgb(255,152,152);
+background: linear-gradient(90deg, rgba(255,152,152,0.96) 0%, rgba(251,0,26,0.4) 26%, rgba(36,113,252,0.8) 100%);
+backdrop-filter: blur(5px);
+}
+.productsImagesEach:hover .WishListCartMainDiv{
+transition: all 2s;
+display: block;
+position: relative;
+bottom: 10px;
+}
+.WishListBtn,.CartBtn{ 
+width: 50%;
+padding: 5px 20px;
+font-size: 26px;
+border: none;
+background-color: transparent;
+span{
+  transition: all 0.8s;
+  position: relative;
+  bottom: 0;
+  color: white;
+}
+span:hover{
+  color: black;
+}
+}
+
+
+.JeansShipping,
+.HelloKitty,
+.AEROFORALLBanner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwa389fd2f/images/2024/Home/073124/B-POT%20DENIM%20BG%20DT.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 5%;
+  position: relative;
+}
+
+.HelloKitty {
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwbcda8db8/images/2024/Home/073124/C-SPOT%20HK%20BG%20DT-min.png');
+}
+
+.AEROFORALLBanner {
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw6f59b318/images/2024/Home/073124/D-SPOT%20AERO%20FOR%20ALL%20DT-min.png');
+}
+
+.jeansShippingText {
+  width: 30%;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  animation: jeansAnimation 1.7s infinite;
+}
+@keyframes jeansAnimation{
+0% {
+  transform: scale(0.9);
+}
+100% {
+  transform: scale(1.1);
+}
+}
+
+.helloKittyText {
+  width: 70%;
+  position: absolute;
+  top: 65%;
+  left: 15%;
+  
+  animation: helloKitty 1.7s infinite;
+}
+@keyframes helloKitty{
+0%{
+  transform: rotate(-5deg);
+  transition: all 0.8s;
+}
+100%{
+  transform: rotate(5deg);
+  transition: all 0.8s;
+}
+}
+
+.aeroforalltext {
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: white;
+  text-align: center;
+  animation: jeansAnimation 1.7s infinite;
+}
+
+.aeroforimg {
+  width: 100%;
+}
+
+.BlueImages {
+width: 100%;
+  background-image: url('https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dwfd8319c9/images/2024/Home/071024/D_SPOT_SHORTS_BG_DT-min.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  h1,h3{
+    color: #F7D30A;
+    font-weight: 900;
+    text-shadow: 4px 3px 2px black;
+  }
+  h3{
+    font-weight: 500;
+  }
+}
+
+footer {
+  background-color: #f9f9f9;
+}
+
+footer h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.LoginForm,.EditForm{
+  width: 98%;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  h2,h4{
+      text-align: center;
+  }
+  input,select{
+      width: 90%;
+      margin:15px auto;
+      display: block;
+      padding: 10px  ;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid grey;
+  }
+  p{
+      padding: 10px;
+      padding-bottom: 0;
+  }
+  .checkBox{
+      width: 20px;
+      display: inline;
+  }
+  .SelectOption{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+  }
+  select{
+      width: 45%;
+      padding: 10px 20px;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid grey;
+  }   
+  .SubmitBtn,.btnLogout{
+      width: 45%;
+      display: block;
+      margin:10px auto;
+      padding:6px 10px;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      font-weight: 500;
+      color: white;
+      background-color: #17274A;
+  }
+  .btnLogout{
+      background-color: red;
+  }
+}
+.topHeader{
+select{
+  padding: 10px;
+  border: 2px solid black;
+}
+}
+.toggleBtnDiv{
+  width: 98%;
+ border: none;
+ outline: none;
+  .toggleBtn{
+      width: 20%;
+      margin: auto;
+      display: block;
+      border: none;
+ outline: none;
+ background-color: white;
+  }
+}
+.btnSignUp{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.productsContentMain{
+  width: 90%;
+  margin:5% auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.loading {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  span {
+      display: inline-block;
+      margin: 0 -.05em;
+    }
+}
+
+
+.loading05 {
+  perspective: 1000px;
+}
+
+.loading05 span {
+  transform-origin: 50% 50% -25px;
+  transform-style: preserve-3d;
+  animation: loading05 1.7s infinite;
+}
+
+.loading05 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loading05 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.loading05 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.loading05 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.loading05 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.loading05 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.loading05 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.loading05 span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.loading05 span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.loading05 span:nth-child(11) {
+  animation-delay: 10s;
+}
+
+@keyframes loading05 {
+  0% {
+    transform: rotateX(-360deg);
+  }
+  70% {
+    transform: rotateX(0);
+  }
+}
+
+strong{
+  display: block;
+}
+.button {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17274A;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.button .button__icon .button__text {
+  transition: all 0.5s;
+}
+.button .button__icon1 .button__text1 {
+  transition: all 0.5s;
+}
+
+.button .button__text {
+  transform: translateX(40px);
+  color: #17274A;
+  font-weight: 600;
+}
+.button .button__text1{
+  transform: translateX(3px);
+  color: #17274A;
+  font-weight: 600;
+}
+
+.button .button__icon { 
+  position: absolute;
+  transform: translateX(0px);
+  height: 100%;
+  width: 39px;
+  background-color: #17274A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px 0px 0px 10px;
+  transition: all 0.8s;
+}
+.button .button__icon1{
+  position: absolute;
+  transform: translateX(40px);
+  height: 100%;
+  width: 39px;
+  background-color: #17274A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  transition: all 0.8s;
+}
+
+
+.button:hover {
+  background: #17274A;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+.button:hover .button__text1{
+  color: transparent;
+}
+
+
+.button:hover .button__icon {
+  width: 80px;
+  transform: translateX(0);
+  border-radius: 10px;
+}
+.button:hover .button__icon1{
+  width: 80px;
+  transform: translateX(0);
+  border-radius: 10px;
+}
+
+.button:active .button__icon {
+  background-color: #17274A;
+ 
+}
+.button:active .button__icon1 {
+  background-color: #17274A;
+ 
+}
+
+.button:active {
+  border: 1px solid #17274A;
+}
+.EditDeleteBtn button {
+  width: 90%;
+  padding:5px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background: rgb(255,152,152);
+  background: linear-gradient(90deg, rgba(255,152,152,0.96) 0%, rgba(251,0,26,0.4) 26%, rgba(36,113,252,0.8) 100%);
+  backdrop-filter: blur(5px);
+
+}
+button:focus {
+  outline: none;
+}
+
+.edit,.delete {
+width: 45%;    
+color: white;
+  border-radius: 5px;
+  transition: all 300ms;
+  background: transparent;
+  background:linear-gradient(90deg, rgba(255,152,152,0.96) 0%, rgba(251,0,26,0.4) 26%, rgba(36,113,252,0.8) 100%);
+  .btnLink{
+      color: white;
+  }
+ 
+}
+.editBtn{
+border-radius: 5px;
+font-size: 22px;
+background-color: #17274A;
+font-weight: bold;
+border: none;
+outline: none;
+transition: all 0.6s;
+.btnLink{
+color: white;
+}
+}
+
+
+.edit:hover,.delete:hover,.editBtn:hover{
+  transform: scale(1.1);
+  letter-spacing: 2px;
+  background: white;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.57);
+}
+.edit:hover .btnLink, .editBtn:hover .btnLink{
+color: #17274A;
+}
+.edit:hover {
+color: #17274A;
+}
+.delete:hover{
+  color: red;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 300px;
+  margin:8% auto;
+  perspective: 1000px;
+  font-family: sans-serif;
+  
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid coral;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background-color: #2234ae;
+  background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+}
+
+.flip-card-back {
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  transform: rotateY(180deg);
+}
+.WishlistMain{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 20px;
+}
+.loader-spin{
+display: flex;
+justify-content: center;
+align-items: center;
+margin:10% auto;
+flex-wrap: wrap;
+width: 90px;
+animation: loader-spin 2s infinite;
+}
+.loader-spin span{
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 5px solid black;
+margin: auto;
+outline: none;
+}
+
+.loader-spin span:nth-child(1){
+border-top-left-radius: 5px;
+border-bottom: 0;
+border-right: 0;
+}
+.loader-spin span:nth-child(2){
+border-top-right-radius: 5px;
+border-bottom: 0;
+border-left: 0;
+}
+.loader-spin span:nth-child(3){
+border-bottom-left-radius: 5px;
+border-top: 0;
+border-right: 0;
+}
+.loader-spin span:nth-child(4){
+border-bottom-right-radius: 5px;
+border-top:0;
+border-left: 0;
+}
+
+@keyframes loader-spin{
+0%{
+  transform: rotate(180deg);
+}
+}
+
+@media (min-width: 320px) and (max-width:768px) {
+  .UpdatesPromo {
+      overflow-x: scroll;
+  }
+
+  .UpdatePromoLiveBox {
+      width: 100%;
+      height: 150px;
+      margin-left: 10px;
+  }
+  .productsContentMain{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+  }
+  .LoginForm,.EditForm{
+      width: 100%;
+  }
+  span{
+      position: relative;
+  }
+  .SearchInput{
+     width: 85%;
+     display: block;
+     margin: auto;
+     position: relative;
+  }
+  .loading{
+      font-size: 30px;
+  }
+  .WishlistMain{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .aeroforalltext,.jeansShippingText{
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+  .helloKittyText{
+    width: 98%;
+    position: absolute;
+    top: 70%;
+    left: 0;
+  }
+}
+@media (min-width: 767px) and (max-width:992px) {
+  .UpdatesPromo {
+      overflow-x: scroll;
+  }
+
+  .UpdatePromoLiveBox {
+      width: 100%;
+      height: 150px;
+      margin-left: 10px;
+  }
+  footer {
+      text-align: center;
+  }
+
+  .social-icons {
+      justify-content: center;
+  }
+  .LoginForm,.EditForm{
+      width: 70%;
+  }
+  .productsContentMain{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  }
+  span{
+      position: relative;
+  }
+  .SearchInput{
+     width: 85%;
+     display: block;
+     margin: auto;
+     position: relative;
+  }
+  .loading{
+      font-size: 50px;
+  }
+  .WishlistMain{
+    display: grid;
+      grid-template-columns: repeat(1,1fr);
+  }
+  .aeroforalltext{
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+  }
+  .jeansShippingText{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+  .helloKittyText{
+    width: 80%;
+    position: absolute;
+    top: 70%;
+    left: 13%;
+  }
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1400px) {
+  /* Your styles for laptops */
+
+  .LoginForm,.EditForm{
+      width: 50%;
+  }
+  span{
+      position: relative;
+  }
+  .SearchInput{
+     width: 80%;
+     display: block;
+     margin: auto;
+     position: relative;
+  }
+  .productsContentMain{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+  .loading{
+      font-size: 84px;
+  }
+  .WishlistMain{
+    display: grid;
+      grid-template-columns: repeat(2,1fr);
+  }
+  .aeroforalltext{
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+  }
+  .jeansShippingText{
+    width: 35%;
+    position: absolute;
+    top: 30%;
+    left: 33%;
+  }
+  .helloKittyText{
+    width: 80%;
+    position: absolute;
+    top: 70%;
+    left: 13%;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width:1920px){
+  /* Your styles for desktops */
+  .LoginForm{
+      width: 30%;
+  }
+  .EditForm{
+      width: 50%;
+  }
+  .productsContentMain{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.WishlistMain{
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.aeroforalltext{
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+.jeansShippingText{
+  width:30%;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+.helloKittyText{
+  width: 60%;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+}
+}
