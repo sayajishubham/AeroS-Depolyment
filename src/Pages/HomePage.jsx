@@ -27,7 +27,7 @@ const HomePage = () => {
   const [productdata, setproductdata] = useState([]);
   const getproductdata = () => {
     axios
-      .get("https://bk-aeropostale-json-server-1.onrender.com/products")
+      .get("https://aero-new-backend.onrender.com/product")
       .then((res) => setproductdata(res.data))
       .catch((err) => console.log(err));
   };
@@ -88,7 +88,7 @@ const HomePage = () => {
           <div className="row d-flex justify-content-around w-100 align-items-center">
             <div className="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
               <img
-                src="https://www.aeropostale.com/on/demandware.static/-/Sites-aeropostale-Library/default/dw956e2e28/images/2024/Home/071024/A_SPOT_BTS%20DEALS_DT.png"
+                src="http://localhost:3000/image/photo1.png"
                 alt=""
                 className="img-fluid"
               />{" "}

@@ -33,7 +33,7 @@ const AeroProducts = () => {
       };
 
       const response = await axios.get(
-        "https://bk-aeropostale-json-server-1.onrender.com/products",
+        "https://aero-new-backend.onrender.com/product",
         { params, credentials: "include" }
       );
 
